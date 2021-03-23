@@ -4,10 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        int atributo = 15;
+        int atributo = 40;
 
+        System.out.println("Numeros Primos");
         ListarPrimos(atributo);
 
+        System.out.println();
+
+        System.out.println("Sucesion de Fibonacci");
         ListarFibonacci(atributo);
     }
 
@@ -25,7 +29,7 @@ public class Main {
             }
         }
 
-        System.out.println("Numeros Primos");
+
         for (int numero: primos) {
             System.out.print(numero + ", ");
         }
@@ -45,15 +49,14 @@ public class Main {
 
 
     private static void ListarFibonacci(int atributo) {
-        int[] fibonacci = new int[atributo];
+        long[] fibonacci = new long[atributo];
 
-        for (int i = 0; i < fibonacci.length; i++) {
+        for (int i = 0; i < atributo; i++) {
             fibonacci[i] = Fibonnaci(i);
 
         }
 
-        System.out.println("\nSucesion de Fibonacci");
-        for (int numero: fibonacci) {
+        for (long numero: fibonacci) {
             System.out.print(numero + ", ");
         }
 
