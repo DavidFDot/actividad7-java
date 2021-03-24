@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        int atributo = 40;
+        int atributo = 15;
 
         System.out.println("Numeros Primos");
         ListarPrimos(atributo);
